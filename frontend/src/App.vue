@@ -1,6 +1,9 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
+      <v-avatar tile>
+        <v-img src="logo.png"></v-img>
+      </v-avatar>
       <v-spacer></v-spacer>
       <v-toolbar-title>TODOs</v-toolbar-title>
       <v-spacer></v-spacer>

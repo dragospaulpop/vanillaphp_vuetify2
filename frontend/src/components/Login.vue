@@ -4,35 +4,50 @@
       <v-col>
         <v-card max-width="400px" class="mx-auto">
           <v-card-title>Authentication</v-card-title>
+          <v-divider></v-divider>
           <v-card-text>
-            <v-text-field
-              v-model="username"
-              label="Username"
-              hint="Your username"
-              persistent-hint>
-              <template v-slot:prepend>
-                <v-avatar tile size="24">
-                  <v-img src="user.png" contain/>
-                </v-avatar>
-              </template>
-            </v-text-field>
-            <v-text-field
-              type="password"
-              v-model="password"
-              label="Password"
-              hint="Your password"
-              persistent-hint>
-              <template v-slot:prepend>
-                <v-avatar tile size="24">
-                  <v-img src="lock.png" contain/>
-                </v-avatar>
-              </template>
-            </v-text-field>
-
-            <v-alert type="error" v-if="error" class="mt-2" border="left" text>
-              {{ error }}
-            </v-alert>
+            <v-container>
+              <v-row>
+                <v-col>
+                  <v-text-field
+                    v-model="username"
+                    label="Username"
+                    hint="Your username"
+                    persistent-hint>
+                    <template v-slot:prepend>
+                      <v-avatar tile size="24">
+                        <v-img src="user.png" contain/>
+                      </v-avatar>
+                    </template>
+                  </v-text-field>
+                </v-col>
+              </v-row>
+              <v-row>
+                <v-col>
+                  <v-text-field
+                    type="password"
+                    v-model="password"
+                    label="Password"
+                    hint="Your password"
+                    persistent-hint>
+                    <template v-slot:prepend>
+                      <v-avatar tile size="24">
+                        <v-img src="lock.png" contain/>
+                      </v-avatar>
+                    </template>
+                  </v-text-field>
+                </v-col>
+              </v-row>
+              <v-row>
+                <v-col>
+                  <v-alert dense type="error" v-if="error" border="left" outlined>
+                    {{ error }}
+                  </v-alert>
+                </v-col>
+              </v-row>
+            </v-container>
           </v-card-text>
+          <v-divider></v-divider>
           <v-card-actions>
             <v-spacer></v-spacer>
             <v-btn

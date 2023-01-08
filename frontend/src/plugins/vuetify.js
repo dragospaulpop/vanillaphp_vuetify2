@@ -13,10 +13,10 @@ export default new Vuetify({
         primary: '#b543b1',
         secondary: '#054ea6',
         accent: '#9ceef3',
-        error: '#FF5252',
-        info: '#2196F3',
+        error: '#B71C1C',
+        info: '#03A9F4',
         success: '#4CAF50',
-        warning: '#FFC107'
+        warning: '#FF5722'
       }
     }
   }
